@@ -250,6 +250,11 @@ header nav a:hover {
     line-height: 17px;
   }
 }
+@media (max-width: 865px) {
+  .content .left-content .ac .about {
+    line-height: 18px;
+  }
+}
 .content .left-content .ac .about h2 {
   margin: 10px 0;
   font-size: 30px;
