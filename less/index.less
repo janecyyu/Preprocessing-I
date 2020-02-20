@@ -112,6 +112,10 @@ header {
 		flex-direction: column;
 	}
 
+	@media (max-width:800px){
+		height: 2000px;
+	}
+
 	.left-content {
 		flex:1;
 		display: flex;
@@ -119,15 +123,17 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 
-		@media (max-width:500px){
+		@media (max-width: 500px){
 			flex-direction: column;
 			height: 1000px;
 		}
 
-		@media (max-width:800px){
+		@media (max-width: 1315px){
 			flex-direction: column;
-			height: 1200px;
+			height: 100%;
 		}
+
+
 
 		.me	{
 			height: 19%;
@@ -214,8 +220,6 @@ header {
 						font-size: 20px;
 					}
 				}
-
-				
 				p {
 					font-family: @font-family-normal;
 					font-size: 16px;
@@ -244,9 +248,24 @@ header {
 		@media (max-width: 500px) {
 			height: 1000px;
 		}
-		@media (max-width: 800px) {
+
+		@media (max-width: 1315px) {
+			height: 1300px;
+		}
+		@media (max-width: 900px) {
 			height: 1700px;
 		}
+
+		@media (max-width: 733px) {
+			height: 2000px;
+		}
+
+
+		@media (max-width: 640px) {
+			height: 2400px;
+		}
+
+
 
 		.larger {
 			flex: 2;
@@ -266,6 +285,8 @@ header {
 				height: 400px;
 				flex: 0;
 			}
+
+
 
 			h1 {
 				background-color: @font-color-light;
