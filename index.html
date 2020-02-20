@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Franklin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,100 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header id="home">
+      <!-- navigation -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#academic">Academic</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="content">
+      <!-- introduction -->
+      <div class="left-content">
+          <div class="me"></div>
+          <div class="title">
+            <h1>Jane Yu</h1>
+            <h3>National
+              Taiwan<br>
+              University</h3>
+          </div>
+          <div class="line"></div>
+          <div class="ac">
+            <div class="about">
+              <h2>About Me</h2>
+              <p>I'm Jane (Jian-yu) Yu, grew up in Taiwan now in California Bay Area.
+                I have a bachelor degree in chinese literature at NTU.
+                Currently, I'm studying full-stack web develope at
+                Lambda School for a Oct. 2020 graduation date.
+              </p>
+            </div>
+            <div class="contact" id="contact">
+              <h2>Contact</h2>
+              <p>
+                Cell: 650-799-8260<br>
+                jane.cy.yu@gmail.com<br>
+                Satan Clara, CA 95054
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="right-content">
+        <div class="boxes larger" id="work">
+          <h1>Work Experience</h1>
+          <br>
+          <h3>
+            Teacher
+          </h3>
+          <h4>YoYo Chinese School | 2018 Apr. - 2019 Aug.</h4>
+          <ul>
+            <li class="list">Plan and carry out a curriculum that targets different areas of student development.</li>
+            <li class="list">Organize activities so students can learn about the world and develop skills.</li>
+            <li class="list"></liclass>Work with students in groups or one on one, depending on the needs and the subjects.</li>
+          </ul>
+          <br>
+          <h3>
+            Senior Clerk
+          </h3>
+          <h4>National Taiwan University | 2015 Nov. - 2017 Mar.</h4>
+          <ul>
+            <li class="list">Planned and made decisions for new online courses, such as Calculus, Real Analysis, Thermodynamics...etc (popular courses in NTU).</li>
+            <li class="list">Maintained website and Youtube channel for online courses, with over 30k followers. </li>
+            <li class="list">Mentored and trained new student employees to edit videos and use photography equipment.</li>
+            <li class="list">Played role of Technical Director during filming of speeches.</li>
+          </ul>
+        </div>
+        <div class="boxes" id="academic">
+          <h1>Academic History</h1>
+          <ul>
+            <li>
+              <h3>Lambda School  | <span class="desc">Full-Stack Web Develope </span>|
+              <span class="date">2020 Feb. - now</span></h3>
+            </li>
+            <li>
+              <h3>National Taiwan University | <span class="desc">Chinese literature </span>|
+              <span class="date">2011 Sep. - 2015 Jun.</span></h3>
+            </li>
+          </ul>
+
+        </div>
+        <div class="boxes">
+          <h1>Volunteer Experience</h1>
+          <ul>
+            <li>
+              <h3>Motley Zoo | <span class="desc">Foster Volunteer </span>|
+              <span class="date">2017 Jul. - 2019 Sep.</span></h3>
+            </li>
+            <li>
+              <h3>Rotaract Club of Taipei South | <span class="desc">President </span>|
+              <span class="date">2016 Jun. - 2017 Mar.</span></h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

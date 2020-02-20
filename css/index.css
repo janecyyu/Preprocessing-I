@@ -1,1 +1,372 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #FBEBDB;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  width: 80%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  align-items: center;
+}
+header nav a {
+  font-family: 'Libre Franklin', sans-serif;
+  text-decoration: none;
+  color: #697E8E;
+  font-size: 21px;
+}
+header nav a:hover {
+  color: rgba(75, 62, 63, 0.762);
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 18px;
+  }
+}
+.main-margin {
+  margin: 7px 10px;
+}
+.hightest {
+  height: 1000px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 1000px;
+}
+@media (max-width: 500px) {
+  .content {
+    flex-direction: column;
+  }
+}
+.content .left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .content .left-content {
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+@media (max-width: 800px) {
+  .content .left-content {
+    flex-direction: column;
+    height: 1200px;
+  }
+}
+.content .left-content .me {
+  height: 19%;
+  width: 56%;
+  border-radius: 10px;
+  background-image: url(../images/me.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content .left-content h1 {
+  font-size: 45px;
+  color: #697E8E;
+  font-family: 'Fjalla One', sans-serif;
+}
+.content .left-content h3 {
+  color: #697E8E;
+  font-size: 30px;
+  margin: 5px 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.content .left-content .line {
+  width: 50%;
+  height: 7px;
+  background-color: #697E8E;
+}
+@media (max-width: 500px) {
+  .content .left-content .line {
+    display: none;
+  }
+}
+.content .left-content .ac {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+  padding: 0 5%;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.content .left-content .ac .about {
+  line-height: 25px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac .about {
+    line-height: 17px;
+  }
+}
+.content .left-content .ac .about h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #697E8E;
+  font-family: 'Fjalla One', sans-serif;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac .about h2 {
+    font-size: 20px;
+  }
+}
+.content .left-content .ac .about p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  color: #697E8E;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac .about p {
+    font-size: 16px;
+  }
+}
+.content .left-content .ac .contact {
+  line-height: 25px;
+  overflow: hidden;
+}
+.content .left-content .ac .contact h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #697E8E;
+  font-family: 'Fjalla One', sans-serif;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac .contact h2 {
+    font-size: 20px;
+  }
+}
+.content .left-content .ac .contact p {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  color: #697E8E;
+}
+@media (max-width: 500px) {
+  .content .left-content .ac .contact p {
+    font-size: 16px;
+  }
+}
+.content .right-content {
+  padding: 2%;
+  flex: 2;
+  background-color: #697E8E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .content .right-content {
+    height: 1000px;
+  }
+}
+@media (max-width: 800px) {
+  .content .right-content {
+    height: 1700px;
+  }
+}
+.content .right-content .larger {
+  flex: 2;
+  padding-bottom: 5%;
+}
+.content .right-content .boxes {
+  width: 80%;
+  height: 15%;
+  border: 1px solid white;
+}
+@media (max-width: 500px) {
+  .content .right-content .boxes {
+    height: 400px;
+    flex: 0;
+  }
+}
+.content .right-content .boxes h1 {
+  background-color: #FBEBDB;
+  height: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 7px 20px;
+  font-size: 27px;
+  color: #697E8E;
+}
+@media (max-width: 500px) {
+  .content .right-content .boxes h1 {
+    font-size: 20px;
+    padding: 11px 20px;
+  }
+}
+.content .right-content .boxes h3,
+.content .right-content .boxes h4 {
+  margin: 7px 10px;
+  color: #FBEBDB;
+  font-size: 19px;
+  font-family: 'Fjalla One', sans-serif;
+}
+.content .right-content .boxes h4 {
+  font-size: 17px;
+}
+.content .right-content .boxes ul {
+  padding: 0 50px;
+  color: #FBEBDB;
+  font-size: 18px;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 25px;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .content .right-content .boxes ul .list {
+    display: none;
+  }
+}
+.content .right-content .boxes ul .desc {
+  color: #f9dd98;
+  font-size: 17px;
+}
+.content .right-content .boxes ul .date {
+  font-size: 17px;
+  color: #f4c093;
+}
